@@ -1,0 +1,3 @@
+﻿  main.cpp
+f:\university\github\portfolio-l5\portfolio-ellemelmarta\fsm\fsm\main.cpp(10): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  fsm.vcxproj -> F:\University\Github\Portfolio-L5\portfolio-Ellemelmarta\fsm\x64\Debug\fsm.exe
