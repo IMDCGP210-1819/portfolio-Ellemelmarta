@@ -27,12 +27,18 @@
     <ClCompile Include="UtilRandom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyBoid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseEntity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UtilRandom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBoid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

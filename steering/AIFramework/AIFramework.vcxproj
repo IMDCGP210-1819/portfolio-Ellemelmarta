@@ -89,13 +89,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\G11\portfolio-Ellemelmarta\steering\AIFramework\include\SFML\Graphics;C:\G11\portfolio-Ellemelmarta\steering\AIFramework\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>.\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system-s-d.lib;sfml-graphics-s-d.lib;freetype.lib;jpeg.lib;sfml-window-s-d.lib;gdi32.lib;winmm.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-system-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;freetype.lib;jpeg.lib;gdi32.lib;winmm.lib;opengl32.lib;kernel32.lib;user32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,8 +104,8 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\G11\portfolio-Ellemelmarta\steering\AIFramework\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,10 +154,12 @@
   <ItemGroup>
     <ClCompile Include="BaseEntity.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyBoid.cpp" />
     <ClCompile Include="UtilRandom.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseEntity.h" />
+    <ClInclude Include="MyBoid.h" />
     <ClInclude Include="UtilRandom.h" />
   </ItemGroup>
   <ItemGroup>
