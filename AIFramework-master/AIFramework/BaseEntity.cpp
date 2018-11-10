@@ -6,7 +6,7 @@ std::vector<BaseEntity*> BaseEntity::Renderables;
 BaseEntity::BaseEntity()
 {
 	// with no further information, we make some assumptions and set default values.
-	filename = "assets\\boid.png";
+	filename = "boid.png";
 	colourTint = sf::Color::White;
 	Initialize();
 }
