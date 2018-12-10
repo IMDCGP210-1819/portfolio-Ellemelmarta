@@ -34,12 +34,39 @@ void BaseEntity::Think()
 	sf::Vector2f pos = getPosition() + (velocity * 0.1f);
 	// update our position
 	setPosition(pos);
+
+
+	
+	
+
+
+
+	//causes boids to come from opposite side of screen so its easier to test
+	if (getPosition().x <= 0)
+	{
+		setPosition(sf::Vector2f(800.0f, getPosition().y));
+	}
+	else if (getPosition().x >= 800.0f)
+	{
+		setPosition(sf::Vector2f(0.0f, getPosition().y));
+	}
+
+	if (getPosition().y <= 0)
+	{
+		setPosition(sf::Vector2f(getPosition().x, 600.0f));
+	}
+	else if (getPosition().y >= 600.0f)
+	{
+		setPosition(sf::Vector2f(getPosition().x, 0.0f));
+	}
+
+	
 }
 
 void BaseEntity::Initialize()
 {
 	// set a default position - could be randomised.
-	setPosition(30.0f, 30.0f);
+	setPosition(400.0f, 300.0f);
 
 	// load the texture into memory
 	texture.loadFromFile(filename);
